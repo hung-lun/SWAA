@@ -211,6 +211,10 @@ header {
     margin: 0px 0px 0px 20px;
     font-weight: bold;
 }
+.normal{
+    color: #5D3400;
+    font-weight: bold;
+}
 .green{
     color: #5EB256;
     font-weight: bold;
@@ -236,7 +240,7 @@ header {
 .result-content-left{
     width: 30%;
     height: auto;
-    background-color: #f0ece5;
+    background-color: #f0ece59e;
     margin: 0px 10px 0px 0px;
     border-radius: 15px;
 }
@@ -277,6 +281,9 @@ label{
 input:checked + .medicine-button {
     background: #5D3400; 
     color: #FFFFFF;
+    /* 設定內邊框 */
+    /* outline: 5px solid #5D3400;
+    outline-offset: -5px; */
 }
 input[type="radio"] {
     display: none; 
