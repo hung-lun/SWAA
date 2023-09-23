@@ -188,7 +188,7 @@ header {
 .Q-button-group{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 0px 100px;
 }
@@ -206,7 +206,7 @@ header {
     border: 0px;
 } */
 label{
-    width: calc((100% - 0px)/6);
+    width: 270.5px;
     margin: 0px 0px 40px 0px;
     display: flex;
     align-items: center;
@@ -215,13 +215,19 @@ label{
     border: 0px;
 }
 .Q-button {
-    display: inline-block; 
-    margin: 0px 5px 5px 0px; 
-    padding: 25px 50px;
+    display: flex; 
+    margin: 0px 5px 5px 5px; 
+    padding: 25px 30px;
     background-color: #DDCFAB;
     color: #74512E;
     border-radius: 15px;
     cursor: pointer; 
+    align-items: center;
+    justify-content: center;
+}
+.Q-button:hover{
+    background-color: #5D3400;
+    color: #FFFFFF;
 }
 input:checked + .Q-button {
     background: #AC855C; 
@@ -270,7 +276,7 @@ input[type="checkbox"] {
 }
 
 .next a:hover {
-    background-color: #D8A36B;
+    background-color: #5D3A00;
     color: #FFFFFF;
     border-radius: 10px;
     border-bottom: 0px;

@@ -230,13 +230,15 @@ header {
 
 .result-content{
     display: flex;
+    height: calc(100vh - 450px);
 }
 
 .result-content-left{
     width: 30%;
     height: auto;
-    background-color: #dcd3c3;
+    background-color: #f0ece5;
     margin: 0px 10px 0px 0px;
+    border-radius: 15px;
 }
 .medicine{
     display: flex;
@@ -250,21 +252,43 @@ header {
 .medicine-button-space{
     height: 70%;
 }
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .medicine-button{
     background-color: #DDCFAB;
     color: #5D3400;
     border: 0px;
     font-size: 30px;
-    width: calc(100% - 100px);
-    margin: 20px 50px;
+    width: calc(100% - 200px);
+    margin: 20px 100px;
     padding: 10px 0px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.medicine-button:hover{
+    background-color: #5D3400;
+    color: #FFFFFF;
+}
+input:checked + .medicine-button {
+    background: #5D3400; 
+    color: #FFFFFF;
+}
+input[type="radio"] {
+    display: none; 
 }
 
 .result-content-right{
     width: 70%;
-    height: 100px;
-    background-color: #D8A36B;
+    height: calc(100% - 30px);
+    background-color: #ffffff6d;
     margin: 0px 0px 0px 10px;
+    padding: 10px 10px 20px 0px;
+    border-radius: 15px;
 }
 
 
@@ -304,7 +328,7 @@ header {
 }
 
 .next a:hover {
-    background-color: #D8A36B;
+    background-color: #5D3A00;
     color: #FFFFFF;
     border-radius: 10px;
     border-bottom: 0px;
