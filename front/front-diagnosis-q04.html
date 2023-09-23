@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--網站icon-->
+    <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
+    <!--網站icon-->
+    <link rel="stylesheet" href="./css/front-diagnosis-q04.css">
+    <title>症狀診斷</title>
+</head>
+<body>
+    <img class="bg" src="./img/main-background.jpg">
+    <header>
+        <div class="header-content">
+            <div class="logo ">
+                <a href="./front-index.html"><img src="./img/mainlogo.png "></a>
+            </div>
+            <div class="center-box">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a class="thispage" href="./front-diagnosis-q01.html">症狀診斷</a>
+                        </li>
+                        <li>
+                            <a href="./front-.html">穴位復健</a>
+                        </li>
+                        <li>
+                            <a href="./front-.html">歷史紀錄</a>
+                        </li>
+                        <li>
+                            <a href="./front-edit-profile.html">修改個人資料</a>
+                        </li>
+                        <li>
+                            <a href="./login.html"><i class="fa-solid fa-right-from-bracket">登出</i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fake-header"></div>
+    <div class="content">
+        <div class="title"><div class="title-left">症狀診斷結果</div><div class="title-right">OSDI = (分數總和 × 25) / 答題數總和</div></div>
+        <form>
+            <div class="result"><div class="result01">您的OSDI分數為</div><div class="result02 orange">29</div><div class="result03">，根據您提供的症狀，系統判斷為</div><div class="result04">”肝腎陰虛型”</div></div>
+            <div class="result-content">
+                <div class="result-content-left">
+                    <div class="medicine">推薦中藥方為</div>
+                    <div class="medicine-button-space">
+                        <input class="medicine-button" type="button" value="杞菊地黃丸">
+                        <input class="medicine-button" type="button" value="滋腎明目湯">
+                    </div>
+                </div>
+                <div class="result-content-right"></div>
+            </div>
+                <nav class="next">
+                    <ul>
+                        <li>
+                            <a href="./front-.html"><i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+        </form>
+    </div>
+</body>
+<script src="./js/"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
