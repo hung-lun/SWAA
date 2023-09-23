@@ -56,11 +56,6 @@ input[type=password] {
     background-color: #b8b6b6;
 } */
 
-input[type=radio] {
-    width: 25px;
-    height: 25px;
-}
-
 .thispage{
     color: #FFFFFF;
     border-bottom: 5px solid #D8A36B;
@@ -173,7 +168,6 @@ header {
     font-weight: bold;
     border-bottom: 3px solid #5D3A00;
     padding: 0px 5px 2px 5px;
-    margin-bottom: 20px;
 }
 
 .question{
@@ -187,33 +181,54 @@ header {
     justify-content: center;
     margin-left: 10px;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
-table{
-    width: 100%;
+
+.Q-button-group{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
     padding: 0px 100px;
 }
-tr{
-    display: flex;
-}
-.Q-title{
-    width: 25%;
-    padding: 10px 0px 10px 20px;
+/* .Q-button{
+    width: calc((100% - 240px)/6);
+    padding: 15px 0px 15px 0px;
+    margin: 10px 20px 40px 20px;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #D8A36B;
-    font-size: 22px;
-}
-.Q-option{
-    width: 15%;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid #D8A36B;
     font-size: 22px;
+    border-radius: 15px;
+    background-color: #DDCFAB;
+    color: #74512E;
+    border: 0px;
+} */
+label{
+    width: calc((100% - 0px)/6);
+    margin: 0px 0px 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border: 0px;
 }
-.radio{
-    border: 2px solid #478846;
+.Q-button {
+    display: inline-block; 
+    margin: 0px 5px 5px 0px; 
+    padding: 25px 50px;
+    background-color: #DDCFAB;
+    color: #74512E;
+    border-radius: 15px;
+    cursor: pointer; 
+}
+input:checked + .Q-button {
+    background: #AC855C; 
+    color: #FFFFFF;
+}
+input[type="checkbox"] {
+    display: none; 
 }
 
 
@@ -223,9 +238,9 @@ tr{
 .next {
     height: 50%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    padding-right: 100px;
+    padding: 0px 100px;
     margin-top: 50px
 }
 

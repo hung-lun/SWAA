@@ -10,8 +10,8 @@
     <!--網站icon-->
     <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
     <!--網站icon-->
-    <link rel="stylesheet" href="./css/signup.css">
-    <title>註冊帳號</title>
+    <link rel="stylesheet" href="./css/front-edit-profile.css">
+    <title>修改個人資料</title>
 </head>
 
 <body>
@@ -34,10 +34,10 @@
                             <a href="./front-.html">歷史紀錄</a>
                         </li>
                         <li>
-                            <a href="./front-edit-profile.html">修改個人資料</a>
+                            <a class="thispage" href="./front-edit-profile.html">修改個人資料</a>
                         </li>
                         <li>
-                            <a href="./login.html"><i class="fa-solid fa-circle-user"></i></a>
+                            <a href="./login.html"><i class="fa-solid fa-right-from-bracket">登出</i></a>
                         </li>
                     </ul>
                 </nav>
@@ -46,11 +46,9 @@
     </header>
     <div class="fake-header"></div>
     <div class="content">
-        <form>　註冊
+        <form>　修改個人資料
             <div class="signup-content">
                 <div class="signup-user">帳號：　<input type="text" id="user" name="user" placeholder="email" required></div>
-                <div class="signup-pwd">密碼：　<input type="password" id="pwd" name="pwd" placeholder="password" required></div>
-                <div class="signup-pwd">密碼確認：　<input type="password" id="pwdcheck" name="pwdcheck" placeholder="password check" required></div>
                 <div class="signup-user">姓名：　<input type="text" id="user" name="user" placeholder="name" required></div>
                 <div class="signup-user">性別：　<select class="text" name="sex">
                     <option value="">請選擇性別</option>
@@ -60,8 +58,8 @@
                 </select></div>
                 <div class="signup-user">年齡：　<input class="age" type="number" id="user" name="user" placeholder="age" required></div>
                 <div class="function">
-                    <div class="signup-button"><input type="button" class="signupb mouse" id="goback" value="返回" onclick="history.back()"></div>
-                    <div class="signup-button"><input type="button" class="signupb mouse" id="next" value="下一步" onclick="javascript:location.href='./signup-verification.html'"></div>
+                    <div class="signup-button"><input type="reset" class="signupb mouse" id="reset" value="重設" onclick=""></div>
+                    <div class="signup-button"><input type="button" class="signupb mouse" id="next" value="修改" onclick=""></div>
                 </div>
             </div>
         </form>
