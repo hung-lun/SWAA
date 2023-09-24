@@ -1,6 +1,6 @@
 var checkedCount = 0;
 var count = document.getElementById("count");
-count.innerHTML = "已選"+checkedCount+"個";
+count.innerHTML = "已選"+checkedCount+"/7";
     function checkCount(obj) {
         if (obj.checked === true) {
 
@@ -15,7 +15,7 @@ count.innerHTML = "已選"+checkedCount+"個";
             if (checkedCount <= 7) {
                 var count = document.getElementById("count");
                 count.innerHTML = 0;
-                count.innerHTML = "已選"+checkedCount+"個";
+                count.innerHTML = "已選"+checkedCount+"/7";
                 if(checkedCount == 7){
                     document.querySelector('.count').classList.add('red');
                 }
@@ -27,7 +27,7 @@ count.innerHTML = "已選"+checkedCount+"個";
 
             if (checkedCount < 7) {
                 var count = document.getElementById("count");
-                count.innerHTML = "已選"+checkedCount+"個";
+                count.innerHTML = "已選"+checkedCount+"/7";
                 if((checkedCount < 7)){
                     document.querySelector('.count').classList.remove('red');
                 }
