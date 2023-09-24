@@ -16,7 +16,10 @@ count.innerHTML = "已選"+checkedCount+"個";
                 var count = document.getElementById("count");
                 count.innerHTML = 0;
                 count.innerHTML = "已選"+checkedCount+"個";
+                if(checkedCount == 7){
+                    document.querySelector('.count').classList.add('red');
                 }
+            }
 
         } else {
 
@@ -25,6 +28,9 @@ count.innerHTML = "已選"+checkedCount+"個";
             if (checkedCount < 7) {
                 var count = document.getElementById("count");
                 count.innerHTML = "已選"+checkedCount+"個";
+                if((checkedCount < 7)){
+                    document.querySelector('.count').classList.remove('red');
+                }
             }
 
         }
