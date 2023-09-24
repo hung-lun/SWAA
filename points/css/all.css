@@ -1,0 +1,57 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif, '微軟正黑體';
+    margin: 0px;
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    height: 100%;
+    font-size: 20px;
+}
+
+.point-name{
+    color: #5D3400;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.title{
+    color: #D8A36B;
+    font-size: 24px;
+}
+.content{
+    color: black;
+}
+
+.make{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.effect{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.cure{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.significance{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.add{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}

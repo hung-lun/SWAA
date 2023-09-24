@@ -10,11 +10,11 @@
     <!--網站icon-->
     <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
     <!--網站icon-->
-    <link rel="stylesheet" href="./css/front-index.css">
-    <title>首頁</title>
+    <link rel="stylesheet" href="./css/front-rehabilitation.css">
+    <title>穴位復健</title>
 </head>
 <body>
-    <img class="bg" src="./img/background.jpg">
+    <img class="bg" src="./img/main-background.jpg">
     <header>
         <div class="header-content">
             <div class="logo ">
@@ -27,7 +27,7 @@
                             <a href="./front-diagnosis-q01.html">症狀診斷</a>
                         </li>
                         <li>
-                            <a href="./front-rehabilitation.html">穴位復健</a>
+                            <a class="thispage" href="./front-rehabilitation.html">穴位復健</a>
                         </li>
                         <li>
                             <a href="./front-history.html">歷史紀錄</a>
@@ -43,7 +43,30 @@
             </div>
         </div>
     </header>
+    <div class="fake-header"></div>
+    <div class="content">
+        <div class="title">穴位復健</div>
+        <form>
+            <div class="all-content">
+                <div class="function">
+                    <input class="btn" type="button" id="goback" value="全部穴位" onclick="javascript:location.href='./front-rehabilitation.html'" >
+                    <input class="btn" type="button" value="完成穴位按摩" onclick="" >
+                </div>
+                <div class="contentt">
+                    <div class="photo-content"><img src="./img/background.jpg"></div>
+                <div class="button-content"><iframe width=100% height=100% id="iframe" frameborder=0 scrolling=auto src="./front-points-button.html"></iframe></div>
+                </div>
+            </div>
+            <nav class="next">
+                <ul>
+                    <li>
+                        <a href="./front-diagnosis-q01.html"><i class="fa-solid fa-angle-right fa-rotate-180"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </form>
+    </div>
 </body>
-<script src="./js/"></script>
+<script src="./js/front-rehabilitation.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>
