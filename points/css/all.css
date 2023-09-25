@@ -55,3 +55,31 @@ body {
     flex-direction: column;
     margin-bottom: 10px;
 }
+
+.function{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 50px;
+    padding: 20px 50px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: auto;
+    padding: 5px 20px;
+    margin-right: 20px;
+    margin-left: 100px;
+    font-size: 22px;
+    background-color: #DDCFAB;
+    color: #5D3A00;
+    border: 0px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #5D3A00;
+    color: #FFFFFF;
+}
