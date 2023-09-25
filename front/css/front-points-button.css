@@ -13,7 +13,9 @@ body {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    height: 100%;
+    margin-top: 50px;
 }
 
 .btn{

@@ -145,6 +145,7 @@ header {
 
 .content {
     height: calc(100% - 150px);
+    min-height: 550px;
     padding: 10px 20px 30px 20px;
     /* width: calc(100% - 600px); */
     /* padding: 0px 300px; */
@@ -203,8 +204,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
-
 
 .Q-button-group{
     display: flex;
