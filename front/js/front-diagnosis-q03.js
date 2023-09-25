@@ -1,3 +1,17 @@
+var logout1 = document.getElementById("logout");
+
+    function logout() {
+        if (confirm('確認要登出嗎？') == true) {
+            window.location.href = "../front/login.html";
+            localStorage.clear();
+        } else {
+
+        }
+    }
+    logout1.addEventListener("click", logout);
+
+
+
 var checkedCount = 0;
 var count = document.getElementById("count");
 count.innerHTML = "已選"+checkedCount+"/7";
@@ -38,4 +52,11 @@ count.innerHTML = "已選"+checkedCount+"/7";
         return true
     }
 
-    var count = document.getElementById("count");
+    
+    function next() {
+        if(checkedCount == 0){
+            alert("最少要選擇1個哦");
+        }else if(checkedCount <= 7){
+            window.location.href = "./front-diagnosis-q04.html";
+        }
+    }
