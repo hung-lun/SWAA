@@ -248,7 +248,7 @@ label{
     justify-content: center;
 }
 .Q-button:hover{
-    background-color: #5D3400;
+    background-color: #AC855C;
     color: #FFFFFF;
 }
 input:checked + .Q-button {
@@ -302,6 +302,27 @@ input[type="checkbox"] {
 }
 
 .next a:hover {
+    background-color: #5D3A00;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border-bottom: 0px;
+}
+
+.next button {
+    color: #5D3A00;
+    font-size: 45px;
+    /*取消底線*/
+    text-decoration: none;
+    padding: 10px 20px;
+    align-items: center;
+    display: flex;
+    background-color: #D8A36B;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.next button:hover {
     background-color: #5D3A00;
     color: #FFFFFF;
     border-radius: 10px;
