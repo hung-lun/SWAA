@@ -44,7 +44,7 @@
         </div>
     </header>
     <div class="fake-header"></div>
-    <div class="content">
+    <div class="content" id="content">
         <div class="date-space">
             <label><input type="radio" name="MM" value="9/24" checked/><span class="date-button mouse">9/24</span></label>
             <label><input type="radio" name="MM" value="9/23"/><span class="date-button mouse">9/23</span></label>
@@ -62,7 +62,9 @@
             <label><input type="radio" name="MM" value="9/11"/><span class="date-button mouse">9/11</span></label>
             <label><input type="radio" name="MM" value="9/10"/><span class="date-button mouse">9/10</span></label>
         </div>
-        <div class="history-space">
+        <div class="pdf-button"><button class="mouse exportPDF" id="exportPDF">Export PDF</button></div>
+        <div class="history-space" id="history">
+            <a class="datee">診斷日期：2023-09-24</a>
             <table>
                 <tr>
                     <td class="topic">OSDI分數</td>
@@ -164,9 +166,14 @@
                     <td class="answer"><a class="red" id="">未完成</a></td>
                 </tr>
             </table>
+            <a class="datee" id="printtime"></a>
         </div>
     </div>
 </body>
-<script src="./js/"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/markdown-it@12.1.0/dist/markdown-it.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script src="./js/front-history.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

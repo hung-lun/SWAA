@@ -213,11 +213,43 @@ input:checked + .date-button {
     padding: 50px 0px 20px 0px;
 }
 
+.pdf-button{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+}
+#exportPDF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D8A36B;
+    font-size: 18px;
+    color: #5D3A00;
+    border: 0px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+#exportPDF:hover{
+    background-color: #5D3A00;
+    color: #FFFFFF;
+}
+
+.datee{
+    margin: 0px auto;
+    width: 80%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
 table{
     margin: 0px auto;
     border: 1px solid #000000;
     border-collapse:collapse;
-    width: 50%;
+    width: 80%;
     margin-bottom: 50px;
 }
 .topic{

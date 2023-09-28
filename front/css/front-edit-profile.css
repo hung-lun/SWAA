@@ -188,6 +188,15 @@ form {
     opacity: 0.8;
 }
 
+.disable{
+    color: #5D3A00;
+    background-color: #cacaca;
+}
+.disable:hover{
+    cursor: no-drop;
+    cursor: not-allowed;
+}
+
 .signup-user {
     display: flex;
     justify-content: left;

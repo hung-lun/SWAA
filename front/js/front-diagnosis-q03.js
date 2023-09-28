@@ -49,14 +49,16 @@ count.innerHTML = "已選"+checkedCount+"/7";
 
         }
 
-        return true
+        return true;
     }
 
     
     function next() {
         if(checkedCount == 0){
             alert("最少要選擇1個哦");
+            return false;
         }else if(checkedCount <= 7){
-            window.location.href = "./front-diagnosis-q04.html";
+            return true;
+            // window.location.href = "./front-diagnosis-q04.html";
         }
     }
