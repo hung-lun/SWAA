@@ -28,6 +28,12 @@ body {
     text-decoration: none;
 }
 
+#logout1{
+    display: none;
+}
+#mm{
+    display: none;
+}
 
 
 header {
@@ -107,4 +113,157 @@ header {
 
 
 /*header結束*/
+@media screen and (max-width: 1200px) {
 
+    header{
+        height: 100px;
+    }
+    .header-content{
+        height: 100px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .menu a {
+        font-size: 18px;
+        padding: 0px 15px;
+    }
+
+    #logout{
+        display: none;
+    }
+    #logout1{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header{
+        height: 100px;
+    }
+    .header-content{
+        height: 100px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .menu {
+        margin-top: 0px;
+    }
+    .menu a {
+        font-size: 18px;
+        padding: 0px 15px;
+    }
+
+    #logout{
+        display: none;
+    }
+    #logout1{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    header{
+        height: 80px;
+    }
+    .header-content{
+        height: 80px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .menu {
+        margin-top: 0px;
+    }
+    .menu a {
+        font-size: 16px;
+        padding: 0px 15px;
+    }
+
+    #logout{
+        display: none;
+    }
+    #logout1{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    header{
+        height: 80px;
+    }
+    .header-content{
+        height: 80px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .menu {
+        margin-top: 0px;
+    }
+    .menu a {
+        font-size: 18px;
+        padding: 0px 15px;
+    }
+
+    #logout{
+        display: none;
+    }
+    #logout1{
+        display: flex;
+    }
+    .center-box{
+        display: none;
+    }
+    .center-box1{
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        background-color: #D8A36B;
+        /* padding: 10px 0px; */
+        position: fixed;
+        right: 0px;
+        height: calc(100% - 80px);
+    }
+    .menu{
+        display: block;
+        height: auto;
+    }
+    .menu ul{
+        display: block;
+    }
+    .menu li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 0px;
+        padding: 40px 0px;
+    }
+    .menu a{
+        padding: 0px 5px;
+        display: block;
+    }
+    #mm{
+        display: flex;
+    }
+    .mm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #5D3A00;
+        font-weight: bold;
+    }
+}
