@@ -158,6 +158,11 @@ form {
     align-items: center;
 }
 
+.title{
+    font-size: 18px;
+    color: #5D3A00;
+}
+
 .login-content {
     width: 500px;
     background-color: #E0DFD5;

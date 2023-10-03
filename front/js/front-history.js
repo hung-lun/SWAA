@@ -1,24 +1,22 @@
+//登出
+var logout1 = document.getElementById("logout");
+logout1.addEventListener("click", logout);
+    function logout() {
+        if (confirm('確認要登出嗎？') == true) {
+            window.location.href = "../front/login.html";
+            localStorage.clear();
+        } else {
+
+        }
+    }
+
+
 document.getElementById("exportPDF").addEventListener("click", function () {
 
-    var today = new Date();
-var year = today.getFullYear();
-var month = String(today.getMonth() + 1).padStart(2, "0"); // 月份從 0 開始，所以需要 +1
-var day = String(today.getDate()).padStart(2, "0");
-
-var hours = String(today.getHours()).padStart(2, '0');
-var minutes = String(today.getMinutes()).padStart(2, '0');
-var seconds = String(today.getSeconds()).padStart(2, '0');
-
-var formattedDate = year + '-' + month + '-' + day;
-var formattedTime = hours + ':' + minutes + ':' + seconds;
-
-
   var element = document.getElementById("history"); //顯示 PDF 內容在 pdf-output 區塊。
-  var print = document.getElementById("printtime");
-  print.innerHTML = "產生PDF時間：" + formattedDate + '　' + formattedTime;
   var options = {
     margin: 0, // 設定頁邊距，單位為毫米
-    filename: "2023-09-22" + " _ history.pdf", // 設定生成的 PDF 檔案名稱
+    filename: "2023-09-24" + " _ history.pdf", // 設定生成的 PDF 檔案名稱
     image: { type: "jpeg", quality: 0.98 }, // 設定圖片品質和類型
     html2canvas: { scale: 5 }, // 設定 html2canvas 的參數
     jsPDF: { unit: "mm", format: "a3", orientation: "portrait" }, // 設定 jsPDF 的參數

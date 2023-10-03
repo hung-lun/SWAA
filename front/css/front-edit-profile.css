@@ -180,6 +180,11 @@ form {
     /* overflow: auto; */
 }
 
+.title{
+    font-size: 18px;
+    color: #5D3A00;
+}
+
 .signup-content {
     width: 500px;
     background-color: #E0DFD5;
@@ -188,10 +193,6 @@ form {
     opacity: 0.8;
 }
 
-.disable{
-    color: #5D3A00;
-    background-color: #cacaca;
-}
 .disable:hover{
     cursor: no-drop;
     cursor: not-allowed;

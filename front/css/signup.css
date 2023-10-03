@@ -176,6 +176,11 @@ form {
     /* overflow: auto; */
 }
 
+.title{
+    font-size: 18px;
+    color: #5D3A00;
+}
+
 .signup-content {
     width: 500px;
     background-color: #E0DFD5;
