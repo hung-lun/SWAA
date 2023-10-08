@@ -47,16 +47,16 @@
     <div class="content">
         <div class="title"><div class="title-left">症狀診斷結果</div><div class="title-center"><a class="normal">分數區間：<a class="green">0~12 正常</a> / <a class="yellow">13~22 輕度乾眼症</a> / <a class="orange">23~32 中度乾眼症</a> / <a class="red">33~100 重度乾眼症</a></a></div><div class="title-right">OSDI = (分數總和 × 25) / 答題數總和</div></div>
         <form>
-            <div class="result"><div class="result01">您的OSDI分數為</div><div class="result02 red">35</div><div class="result03">，根據您提供的症狀，系統判斷為</div><div class="result04">”肝腎陰虛型”</div></div>
+            <div class="result"><div class="result01">您的OSDI分數為</div><div id="score" class="result02 red">35</div><div class="result03">，根據您提供的症狀，系統判斷為</div><div class="result04" id="result04"></div></div>
             <div class="result-content">
                 <div class="result-content-left">
                     <div class="medicine">推薦中藥方為</div>
-                    <div class="medicine-button-space">
-                        <label><input class="mouse button" type="radio" name="MM" value="杞菊地黃丸" checked/><span class="medicine-button mouse">杞菊地黃丸</span></label>
-                        <label><input class="mouse button" type="radio" name="MM" value="滋腎明目湯" /><span class="medicine-button mouse">滋腎明目湯</span></label>
+                    <div class="medicine-button-space" id="medicine_button">
+                        <!-- <label><input class="mouse button" type="radio" name="MM" value="杞菊地黃丸" checked/><span class="medicine-button mouse">杞菊地黃丸</span></label>
+                        <label><input class="mouse button" type="radio" name="MM" value="滋腎明目湯" /><span class="medicine-button mouse">滋腎明目湯</span></label> -->
                     </div>
                 </div>
-                <div class="result-content-right"><iframe width=100% height=100% frameborder=0 scrolling=auto src="../medicine/01-01.html"></iframe></div>
+                <div class="result-content-right"><iframe id="medicine" width=100% height=100% frameborder=0 scrolling=auto src=""></iframe></div>
             </div>
                 <nav class="next">
                     <ul>
@@ -68,6 +68,6 @@
         </form>
     </div>
 </body>
-<script src="./js/"></script>
+<script src="./js/front-diagnosis-q04.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

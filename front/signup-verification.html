@@ -18,9 +18,9 @@
     <header>
         <div class="header-content">
             <div class="logo ">
-                <a href=""><img src="./img/mainlogo.png "></a>
+                <a href="./login.html"><img src="./img/mainlogo.png "></a>
             </div>
-            <div class="center-box">
+            <!-- <div class="center-box">
                 <nav class="menu">
                     <ul>
                         <li>
@@ -40,26 +40,26 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </div> -->
         </div>
     </header>
     <div class="fake-header"></div>
     <div class="content">
         <form>　<a class="title">註冊-信箱驗證</a>
             <div class="signup-content">
-                <div class="user">帳　號：<input type="text" id="user" name="user" placeholder="email" required></div>
+                <div class="user">帳　號：<input type="text" id="user" name="user" placeholder="email" value="123@gmail.com" required></div>
                 <div class="pwd">
-                    驗證碼：<input class="verification-num" type="" id="verification-num" name="verification-num" placeholder="請輸入驗證碼" required>
+                    驗證碼：<input class="verification-num" type="" id="verification_num" name="verification_num" placeholder="請輸入驗證碼" required>
                     <input type="button" class="resend mouse" id="resend" value="重新發送">
                 </div>
                 <div class="function">
-                    <div class="signup-button"><input type="button" class="button mouse" id="goback" value="返回" onclick="history.back()"></div>
-                    <div class="signup-button"><input type="button" class="button mouse" id="signup" value="註冊" onclick="return nexttt()"></div>
+                    <div class="signup-button"><input type="button" class="button mouse" id="goback" value="返回" onclick="location.href='signup.html';"></div>
+                    <div class="signup-button"><input type="button" class="button mouse" id="signup" value="註冊" onclick="return nextt()"></div>
                 </div>
             </div>
         </form>
     </div>
 </body>
-<script src="./js/login.js"></script>
+<script src="./js/signup-verification.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

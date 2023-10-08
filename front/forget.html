@@ -18,9 +18,9 @@
     <header>
         <div class="header-content">
             <div class="logo ">
-                <a href=""><img src="./img/mainlogo.png "></a>
+                <a href="./login.html"><img src="./img/mainlogo.png "></a>
             </div>
-            <div class="center-box">
+            <!-- <div class="center-box">
                 <nav class="menu">
                     <ul>
                         <li>
@@ -40,29 +40,29 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </div> -->
         </div>
     </header>
     <div class="fake-header"></div>
     <div class="content">
         <form>　<a class="title">忘記密碼</a>
             <div class="forget-content">
-                <div class="user">帳　號：<input type="text" id="user" name="user" placeholder="email" value="" readonly></div>
+                <div class="user">帳　號：<input type="text" id="user" name="user" placeholder="email" value="" required></div>
                 <div class="pwd">
-                    驗證碼：<input class="verification-num" type="" id="verification-num" name="verification-num" placeholder="請輸入驗證碼" required>
-                    <input type="button" class="resend mouse" id="resend" value="重新發送">
+                    驗證碼：<input class="verification-num" type="" id="verification_num" name="verification_num" placeholder="請輸入驗證碼" required>
+                    <input type="button" class="resend mouse" id="resend" value="發送驗證碼">
                 </div>
                 <div class="pwd">
-                    新密碼：<input type="password" id="pwd-check" name="pwd-check" placeholder="請輸入新密碼" required>
+                    新密碼：<input type="password" id="newpwd" name="newpwd" placeholder="請輸入新密碼" required>
                 </div>
                 <div class="function">
-                    <div class="forget-button"><input type="button" class="button mouse" id="goback" value="返回" onclick="history.back()"></div>
-                    <div class="forget-button"><input type="button" class="button mouse" id="update" value="修改" onclick="return nexttt()"></div>
+                    <div class="forget-button"><input type="button" class="button mouse" id="goback" value="返回" onclick="location.href='login.html';"></div>
+                    <div class="forget-button"><input type="button" class="button mouse" id="update" value="修改" onclick="return nextt()"></div>
                 </div>
             </div>
         </form>
     </div>
 </body>
-<script src="./js/login.js"></script>
+<script src="./js/forget.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>
