@@ -58,8 +58,9 @@ count.innerHTML = "已選"+checkedCount+"/7";
             alert("最少要選擇1個哦");
             return false;
         }else if(checkedCount <= 7){
+
+            window.location.href = "./front-diagnosis-q04.html";
             return true;
-            // window.location.href = "./front-diagnosis-q04.html";
         }
     }
 
@@ -84,4 +85,4 @@ var ff1 = parseInt(ff, 24);
 var gg1 = parseInt(gg, 24);
 
 var total = aa1+bb1+cc1+dd1+ee1+ff1+gg1;
-alert(total);
+// alert(total);

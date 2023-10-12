@@ -33,4 +33,4 @@ var gg1 = parseInt(gg, 24);
 var hh1 = parseInt(hh, 24);
 
 var total = aa1+bb1+cc1+dd1+ee1+ff1+gg1+hh1;
-alert(total);
+// alert(total);
